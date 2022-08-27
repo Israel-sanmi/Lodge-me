@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="md:flex justify-between items-center hidden pt-10">
         <div className="flex gap-2 items-center">
           <img src={logo} alt="" className="w-auto h-auto" />
-          <img src={logoText} alt="" />
+          {/* <img src={logoText} alt="" /> */}
         </div>
         <div className="">
           <ul className="flex gap-5">
