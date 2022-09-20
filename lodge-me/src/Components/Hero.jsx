@@ -1,26 +1,40 @@
 import React from "react";
 import globe from "../assets/globe.png";
 import { useEffect } from "react";
-const Hero = () => {
-   
-  
+const Hero = ({ handleClose }) => {
   return (
     <div className="flex flex-wrap items-center justify-around pt-10 md:pt-0">
       <div className="h-40 bg-yellow-200 rounded-full filter blur-3xl absolute md:left-60 left-0 md:-mt-40 -mt-0 w-40"></div>
 
-      <div className="relative">
+      <div className="relative md:w-1/2 w-full">
         <h1 className="font-bold text-4xl text-center hidden md:block md:text-left">
-          Connecting you to your <br /> dream properties
+          Looking for <span className="text-[#534741]">Luxury</span> and{" "}
+          <span className="text-[#FAA530]">Comfort?</span> <br /> Cozzy’s got
+          you!
         </h1>
-        <h1 className="font-bold text-4xl text-center block md:hidden">
-          Connecting you to your dream properties
+        <h1 className=" font-bold leading-5 text-xl uppercase text-center block md:hidden">
+          Looking for <span className="text-[#534741]">Luxury</span> and{" "}
+          <span className="text-[#FAA530]">Comfort?</span> Cozzy’s got you!
         </h1>
-        <p className="font-normal py-4 text-lg text-center md:text-left">
-          Connecting you to your dream <br /> properties, connecting you to{" "}
-          <br /> your dream properties
+        <p className="font-normal py-4 md:text-lg hidden md:block text-sm text-center md:text-left">
+          Searching for luxurious and comfortable homes can be hard. With Cozy,
+          connecting you to your dream homes becomes easier. You can get the
+          perfect and comfortable homes, either for residency or as a vast
+          traveller looking for a home away from home experience, on your
+          fingertips.
+        </p>
+        <p className="font-normal text-[#534741] py-4 md:text-lg leading-4 text-sm block md:hidden text-center md:text-left">
+          Searching for luxurious and comfortable homes can be hard. With Cozy,
+          connecting you to your dream homes becomes easier. You can get the
+          perfect and comfortable homes, either for residency or as a vast
+          traveller looking for a home away from home experience, on your
+          fingertips.
         </p>
         <div className="md:mx-0 mx-4">
-          <button className="w-full md:w-auto bg-gradient-to-r from-[#FAA530] to-[#534741] text-white text-md rounded-sm py-2 px-6">
+          <button
+            onClick={handleClose}
+            className="w-full md:w-auto md:text-md text-sm bg-gradient-to-r from-[#FAA530] to-[#534741] text-white text-md rounded-sm py-2 px-6"
+          >
             Join Our Waiting List
           </button>
         </div>

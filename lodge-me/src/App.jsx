@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     setInterval(() => {
       setIsShown(true);
-    }, 2000);
+    }, 7000);
   }, []);
 
   const [close, setClose] = useState(true);
@@ -38,10 +38,10 @@ function App() {
         {isShown && (
           <>{close && <RegModal close={close} handleClose={handleClose} />}</>
         )}
-        <Hero />
+        <Hero handleClose={handleClose} />
         <InfoBar />
         <Activities />
-        <Products />
+        <Products handleClose={handleClose} />
         <Feedback />
         <Complaint />
       </div>

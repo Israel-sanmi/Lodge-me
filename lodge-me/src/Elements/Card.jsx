@@ -13,7 +13,7 @@ const Card = ({feedImg, avatarImg, summary, avatarName}) => {
         </div>
         <div className="pl-3">
           <div>
-            <p className="text-md leading-5 pt-2">
+            <p className="md:text-md text-xs leading-5 pt-2">
               {summary}
             </p>
             <div className="flex flex-wrap gap-1 py-2">
@@ -26,7 +26,7 @@ const Card = ({feedImg, avatarImg, summary, avatarName}) => {
           </div>
           <div className="flex flex-wrap">
             <img src={avatarImg} alt="" className="w-auto h-14" />
-            <p className="text-md font-semibold mt-2">
+            <p className="md:text-md text-sm font-semibold mt-2">
               {avatarName}
             </p>
           </div>

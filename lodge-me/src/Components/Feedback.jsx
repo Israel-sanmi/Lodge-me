@@ -11,11 +11,11 @@ const Feedback = () => {
       <div>
         <Heading
           title="What they say"
-          summary="What people who use our manual services say about us are our testimonies and our pride"
+          summary="Hear from people who have used our manual services"
           line={line2}
         />
       </div>
-        <Slide />
+      <Slide />
     </div>
   );
 };

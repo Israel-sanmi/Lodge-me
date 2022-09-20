@@ -13,7 +13,7 @@ const MobileNav = () => {
     <div className="md:hidden block">
       <div className="w-full p-5 z-10 bg-gray-200 backdrop-blur-md">
         <div className="flex justify-between items-center">
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className='w-auto h-20'/>
           {open ? (
             <XIcon className="w-6 h-6 transition-all text-[#f7931e]" onClick={handleClick}/>
           ) : (

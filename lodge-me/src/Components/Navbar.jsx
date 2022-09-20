@@ -11,11 +11,11 @@ const Navbar = () => {
     <div className=" md:px-24 px-0">
       <div className="md:flex justify-between items-center hidden pt-10">
         <div className="flex gap-2 items-center">
-          <img src={logo} alt="" className="w-auto h-auto" />
+          <img src={logo} alt="" className="w-auto h-24" />
           {/* <img src={logoText} alt="" /> */}
         </div>
         <div className="">
-          <ul className="flex gap-5">
+          <ul className="flex gap-16">
             <li className="cursor-pointer hover:text-[#fbb03b]">Home</li>
             <li className="cursor-pointer hover:text-[#fbb03b]">What we do</li>
             <li className="cursor-pointer hover:text-[#fbb03b]">
