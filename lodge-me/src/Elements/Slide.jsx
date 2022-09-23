@@ -101,7 +101,7 @@ const Slide = () => {
           feedImg={feedImg}
           summary="I never thought getting a home for my family would be such an easy process but with Cozy, I was able to get the home I have pictured one too many times"
           avatarImg={avatarImg}
-          avatarName="John Doe"
+          avatarName="Adebayo Chukwu"
         />
       </div>
       <div className="">
@@ -109,7 +109,7 @@ const Slide = () => {
           feedImg={feedImg2}
           summary="Planning a family vacation could never be easy. We got the best reservations for the trip, even our paralepgic grandmother was well catered for. It was truly a home away from home experience"
           avatarImg={avatarImg1}
-          avatarName="Jane Doe"
+          avatarName="Halima Osaze"
         />
       </div>
       {/* </Slider> */}

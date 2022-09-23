@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     setInterval(() => {
       setIsShown(true);
-    }, 7000);
+    }, 15000);
   }, []);
 
   const [close, setClose] = useState(true);

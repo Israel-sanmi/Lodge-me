@@ -14,11 +14,9 @@ const Footer = ({handleClose}) => {
     <div className="bg-[#534741] w-full h-[400px] mt-10 p-5 text-xs text-white">
       <div className="grid gap-2 md:grid-cols-4 grid-cols-2 md:mt-20 mt-5 md:mx-28 mx-2 place-items-center">
         <div>
-          <img src={logo} alt="" className="w-auto h-20"/>
+          <img src={logo} alt="" className="w-auto h-20" />
           <p className="font-light text-xs md:mt-5 mt-2 md:leading-5 leading-snug">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            Facebook: Cozzy_app <br /> Twitter: Cozzy_app <br /> Instagram: Cozzy_app
           </p>
           <div className="flex mt-2 items-center gap-4">
             <FaFacebookF className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />

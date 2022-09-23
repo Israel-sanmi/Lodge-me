@@ -17,23 +17,19 @@ const Hero = ({ handleClose }) => {
           <span className="text-[#FAA530]">Comfort?</span> Cozzy’s got you!
         </h1>
         <p className="font-normal py-4 md:text-lg hidden md:block text-sm text-center md:text-left">
-          Searching for luxurious and comfortable homes can be hard. With Cozy,
-          connecting you to your dream homes becomes easier. You can get the
-          perfect and comfortable homes, either for residency or as a vast
-          traveller looking for a home away from home experience, on your
-          fingertips.
+          Connecting you to your dream properties. You can get the perfect and
+          comfortable homes, either for residency or as a vast traveler looking
+          for a home away from home experience.
         </p>
         <p className="font-normal text-[#534741] py-4 md:text-lg leading-4 text-sm block md:hidden text-center md:text-left">
-          Searching for luxurious and comfortable homes can be hard. With Cozy,
-          connecting you to your dream homes becomes easier. You can get the
-          perfect and comfortable homes, either for residency or as a vast
-          traveller looking for a home away from home experience, on your
-          fingertips.
+          Connecting you to your dream properties. You can get the perfect and
+          comfortable homes, either for residency or as a vast traveler looking
+          for a home away from home experience.
         </p>
         <div className="md:mx-0 mx-4">
           <button
             onClick={handleClose}
-            className="w-full md:w-auto md:text-md text-sm bg-gradient-to-r from-[#FAA530] to-[#534741] text-white text-md rounded-sm py-2 px-6"
+            className="w-full md:w-auto md:text-md text-sm bg-gradient-to-r from-[#895711] to-[#5c3a29] text-white text-md rounded-2xl py-2 px-6"
           >
             Join Our Waiting List
           </button>

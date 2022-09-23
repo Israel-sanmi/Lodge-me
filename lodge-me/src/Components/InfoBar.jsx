@@ -5,7 +5,7 @@ import trophy from "../assets/trophy.png";
 
 const InfoBar = () => {
   return (
-    <div className="bg-[#F6FBF8] drop-shadow-md rounded-md grid md:grid-cols-3 grid-cols-1 place-items-center py-6 mx-3 md:mx-0">
+    <div className="bg-[#F6FBF8] md:my-10 my-0 drop-shadow-md rounded-md grid md:grid-cols-3 grid-cols-1 place-items-center py-6 mx-3 md:mx-0">
       <div className="flex flex-wrap items-center">
         <img src={review} alt="" className="w-auto h-auto" />
         <div>
