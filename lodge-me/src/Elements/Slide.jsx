@@ -99,7 +99,7 @@ const Slide = () => {
       <div className="mb-4 md:mb-0">
         <Card
           feedImg={feedImg}
-          summary="I never thought getting a home for my family would be such an easy process but with Cozy, I was able to get the home I have pictured one too many times"
+          summary="I never thought getting a home for my family would be such an easy process but with Cozzy, I was able to get the home I have pictured one too many times"
           avatarImg={avatarImg}
           avatarName="Adebayo Chukwu"
         />

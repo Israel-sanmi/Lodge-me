@@ -1,15 +1,42 @@
 import { XIcon } from "@heroicons/react/solid";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 const RegModal = ({ handleClose, close }) => {
-  const {
-    register,
-    formState: { errors },
-    handleSubmit,
-  } = useForm();
+  const form = useRef();
 
-  const onSubmit = (data) => console.log(data);
+  const [popResult, setpopResult] = useState(false);
+  const [name, setName] = useState(false)
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_3dhx4j9",
+        "template_xdezh0i",
+        form.current,
+        "sUJvKhFHf6-BrMqSQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setpopResult(true);
+          setName(true)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  // const {
+  //   register,
+  //   formState: { errors },
+  //   handleSubmit,
+  // } = useForm();
+
+  // const onSubmit = (data) => console.log(data);
 
   return (
     <div className="fixed w-full h-screen z-10 bg-black/50 inset-0 flex justify-center items-center">
@@ -26,27 +53,28 @@ const RegModal = ({ handleClose, close }) => {
                 </div>
                 <div>
                   <h1 className="font-bold text-2xl">Join Our Waiting List</h1>
-                  <p className="text-xs leading-tight text-center">
-                    Key an eye on the future <br />
-                    Stay connected <br />
-                    Stay Updated
+                  <p className="text-xs leading-tight text-left">
+                    Keep an eye on the future, Stay connected <br />
+                    Stay Updated!
                   </p>
+                  <p className="text-red-500 font-semibold text-sm">{popResult ? "Done!" : ""}</p>
                 </div>
               </div>
             </div>
             <div>
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="py-4">
                   <p className="font-bold text-xs">
                     Name <span className="text-red-500">*</span>
                   </p>
                   <input
-                    className="bg-[#F9FAFF] border border-[#DEE6FF] rounded-md py-1 w-full px-2"
-                    {...register("Name", { required: true })}
+                    className="bg-[#F9FAFF] capitalize border border-[#DEE6FF] rounded-md py-1 w-full px-2"
+                    // {...register("Name", { required: true })}
+                    name="user_name"
                   />
-                  <p className="text-sm text-red-500">
+                  {/* <p className="text-sm text-red-500">
                     {errors.Name?.type === "required" && "Name is required"}
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="py-4">
@@ -55,11 +83,12 @@ const RegModal = ({ handleClose, close }) => {
                   </p>
                   <input
                     className="bg-[#F9FAFF] border border-[#DEE6FF] rounded-md py-1 w-full px-2"
-                    {...register("mail", {
-                      required: "Email Address is required",
-                    })}
+                    // {...register("mail", {
+                    //   required: "Email Address is required",
+                    // })}
+                    name="user_email"
                   />
-                  <p className="text-sm text-red-500">{errors.mail?.message}</p>
+                  {/* <p className="text-sm text-red-500">{errors.mail?.message}</p> */}
                 </div>
 
                 <div className="py-4">
@@ -68,9 +97,10 @@ const RegModal = ({ handleClose, close }) => {
                   </p>
                   <input
                     className="bg-[#F9FAFF] border border-[#DEE6FF] rounded-md py-1 w-full px-2"
-                    {...register("phone number", {
-                      required: "Phone Number is required",
-                    })}
+                    // {...register("phone number", {
+                    //   required: "Phone Number is required",
+                    // })}
+                    name="user_phone"
                   />
                   {/* <p className="text-sm text-red-500">{Number.mail?.message}</p> */}
                 </div>
@@ -90,8 +120,11 @@ const RegModal = ({ handleClose, close }) => {
                 </div> */}
 
                 <input
-                  type="Submit"
-                  value="Submit"
+                  type="submit"
+                  // value="Submit"
+                  value={popResult ? "Done!" : "Submit"}
+                  disabled={popResult}
+                  // {res}
                   className="text-white text-xs bg-gradient-to-r from-green-400 to-green-700 py-2 px-10 font-bold cursor-pointer rounded-2xl"
                 />
               </form>

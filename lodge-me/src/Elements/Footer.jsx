@@ -16,13 +16,20 @@ const Footer = ({handleClose}) => {
         <div>
           <img src={logo} alt="" className="w-auto h-20" />
           <p className="font-light text-xs md:mt-5 mt-2 md:leading-5 leading-snug">
-            Facebook: Cozzy_app <br /> Twitter: Cozzy_app <br /> Instagram: Cozzy_app
+            Facebook: Cozzy_app <br /> Twitter: Cozzy_app <br /> Instagram:
+            Cozzy_app
           </p>
           <div className="flex mt-2 items-center gap-4">
-            <FaFacebookF className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />
-            <FaInstagramSquare className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />
-            <FaTwitter className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />
-            <FaLinkedinIn className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />
+            <a href="https://web.facebook.com/profile.php?id=100085385627074">
+              <FaFacebookF className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />
+            </a>
+            <a href="https://www.instagram.com/cozzy_app/">
+              <FaInstagramSquare className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />
+            </a>
+            <a href="https:/twitter.com/cozzy_app">
+              <FaTwitter className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />
+            </a>
+            {/* <FaLinkedinIn className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " /> */}
           </div>
         </div>
         <div>

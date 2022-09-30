@@ -8,10 +8,11 @@ const Products = ({ handleClose }) => {
   return (
     <div>
       <div>
+        
         <Heading
           title="We want to serve you"
           line={line}
-          summary="Our products have been tailored to bring you satisfaction and coziness"
+          summary="Our products have been tailored to bring you satisfaction and cozzy-ness"
         />
       </div>
       <div className="">
@@ -23,16 +24,16 @@ const Products = ({ handleClose }) => {
                 <p className="md:text-lg text-md font-semibold">
                   We’re going App soon; <br /> It’s a work in Progress
                 </p>
-                <p className="md:text-sm text-xs font-light py-4">
+                {/* <p className="md:text-sm text-xs font-light py-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem{" "}
                   <br />
                   ipsum dolor sit amet, consectetur adipiscing.
-                </p>
-                <button onClick={handleClose} className="bg-[#FBAE39] font-bold text-sm md:text-md rounded-2xl py-2 cursor-pointer px-3">
+                </p> */}
+                <button onClick={handleClose} className="bg-[#FBAE39] mt-20 font-bold text-sm md:text-md rounded-2xl py-2 cursor-pointer px-3">
                   Join our waiting List
                 </button>
               </div>
-              <div className="mt-10">
+              <div className="mt-20">
                 <p className="md:text-sm text-xs">Till then, use our human services</p>
                 <button className="bg-none border md:text-md text-sm mt-2 border-[#FBAE39] rounded-2xl py-1 px-9 cursor-pointer">
                   Contact Us

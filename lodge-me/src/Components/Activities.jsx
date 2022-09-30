@@ -29,10 +29,13 @@ const Activities = () => {
                   Connect you
                 </p>
                 <p className="md:text-sm text-xs ">
-                  Want to go for your vacation and feel as though you are
-                  already welcome? Cozy will connect connect you with locals in
-                  your travel destination. Not only that, you’ll be able to read
-                  about your destination. Consider it inside information
+                  <span className="font-semibold">
+                    Want to go for your vacation and feel as though you are
+                    already welcome?
+                  </span>{" "}
+                  Cozzy will connect connect you with locals in your travel
+                  destination. <br /> Not only that, you’ll be able to read
+                  about your destination. <br /> Consider it inside information.
                 </p>
               </div>
             </div>
@@ -46,8 +49,9 @@ const Activities = () => {
                 </p>
                 <p className="md:text-sm text-xs ">
                   Make yourself stand out among other agents in the real estate
-                  business. We help faciliitate your businness by enhancing your
-                  reach and engagement with customers as you list with us
+                  business. <br /> We help faciliitate your businness by
+                  enhancing your reach and engagement with customers as you list
+                  with us.
                 </p>
               </div>
             </div>
@@ -64,8 +68,8 @@ const Activities = () => {
                 <p className="md:text-sm text-xs ">
                   With just few clicks, you can get your perfect home with
                   luxury and comfort all rolled in one on our properties
-                  listing. Be a property owner faster and easier than you can
-                  say Cozy!
+                  listing. <br /> Be a property owner faster and easier than you
+                  can say Cozzy!
                 </p>
               </div>
             </div>
@@ -80,7 +84,8 @@ const Activities = () => {
                 <p className="md:text-sm text-xs ">
                   As a traveller, you can plan your vacation right from the
                   comfort of your home by going through the vast options of
-                  lodgings on our platform. We can
+                  lodgings on our platform. <br />
+                  {/* <span className="font-semibold">We can!</span> */}
                 </p>
               </div>
             </div>

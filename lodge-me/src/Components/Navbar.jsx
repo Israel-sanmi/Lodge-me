@@ -15,7 +15,7 @@ const Navbar = () => {
           {/* <img src={logoText} alt="" /> */}
         </div>
         <div className="">
-          <ul className="flex gap-16">
+          <ul className="flex gap-16 font-semibold">
             <li className="cursor-pointer hover:text-[#FAA530]">Home</li>
             <li className="cursor-pointer hover:text-[#FAA530]">What we do</li>
             <li className="cursor-pointer hover:text-[#FAA530]">

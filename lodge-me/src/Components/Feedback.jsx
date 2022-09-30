@@ -9,6 +9,7 @@ const Feedback = () => {
   return (
     <div className="bg-[#F6FBF8] rounded-md md:mx-2 mx-0 mt-10 mb-16 pb-16">
       <div>
+        
         <Heading
           title="What they say"
           summary="Hear from people who have used our manual services"
