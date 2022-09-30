@@ -9,7 +9,7 @@ const Card = ({feedImg, avatarImg, summary, avatarName}) => {
     <div className=" md:w-96 w-80">
       <div className="bg-[#F9F9F9] drop-shadow-xl border border-[#F9A32E] rounded-md">
         <div>
-          <img src={feedImg} alt="" className="w-auto h-62" />
+          <img src={feedImg} alt="" className="w-full h-52" />
         </div>
         <div className="pl-3">
           <div>

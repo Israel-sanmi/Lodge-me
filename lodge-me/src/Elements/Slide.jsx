@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../Elements/Card";
 import feedImg from "../assets/feedImg.png";
 import feedImg2 from "../assets/feedImg2.png";
+import feedImg3 from "../assets/feedImg3.jpg";
 import avatarImg from "../assets/avatarImg.png";
 import avatarImg1 from "../assets/avatarImg1.png";
 // import Slider from "react-slick";
@@ -107,9 +108,17 @@ const Slide = () => {
       <div className="">
         <Card
           feedImg={feedImg2}
-          summary="Planning a family vacation could never be easy. We got the best reservations for the trip, even our paralepgic grandmother was well catered for. It was truly a home away from home experience"
+          summary="Planning a family vacation could never be easy. We got the best reservations for the trip, even our paralepgic grandmother was well catered for. It was truly a home away from home experience."
           avatarImg={avatarImg1}
           avatarName="Halima Osaze"
+        />
+      </div>
+      <div className="">
+        <Card
+          feedImg={feedImg3}
+          summary="Planning a family vacation could never be easy. We got the best reservations for the trip, even our paralepgic grandmother was well catered for. It was truly a home away from home experience."
+          avatarImg={avatarImg1}
+          avatarName="Racheal Michaels"
         />
       </div>
       {/* </Slider> */}

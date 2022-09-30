@@ -39,7 +39,7 @@ const Hero = ({ handleClose }) => {
         <img
           src={globe}
           alt=""
-          className="w-auto h-[500px] object-contain relative"
+          className="w-auto h-[500px] object-contain relative animate-pulse"
         />
       </div>
       <div className="h-40 bg-blue-200 rounded-full filter blur-3xl absolute md:mt-56 mt-0 w-40"></div>
