@@ -6,10 +6,10 @@ import { StarIcon } from "@heroicons/react/solid";
 
 const Card = ({feedImg, avatarImg, summary, avatarName}) => {
   return (
-    <div className=" md:w-96 w-80">
+    <div className=" md:w-96 h-96 w-80">
       <div className="bg-[#F9F9F9] drop-shadow-xl border border-[#F9A32E] rounded-md">
         <div>
-          <img src={feedImg} alt="" className="w-full h-52" />
+          <img src={feedImg} alt="" className="w-full h-52 object-cover" />
         </div>
         <div className="pl-3">
           <div>
