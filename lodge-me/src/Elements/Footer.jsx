@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 const Footer = ({handleClose}) => {
   return (
-    <div className="bg-[#534741] w-full h-[400px] mt-10 p-5 text-xs text-white">
+    <div id="Contact" className="bg-[#534741] w-full h-[400px] mt-10 p-5 text-xs text-white">
       <div className="grid gap-2 md:grid-cols-4 grid-cols-2 md:mt-20 mt-5 md:mx-28 mx-2 place-items-center">
         <div>
           <img src={logo} alt="" className="w-auto h-20" />

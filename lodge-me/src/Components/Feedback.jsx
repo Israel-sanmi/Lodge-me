@@ -7,7 +7,7 @@ import Slide from "../Elements/Slide";
 const Feedback = () => {
     
   return (
-    <div className="bg-[#F6FBF8] rounded-md md:mx-2 mx-0 mt-10 mb-16 pb-16">
+    <div id="Review" className="bg-[#F6FBF8] rounded-md md:mx-2 mx-0 mt-10 mb-16 pb-16">
       <div>
         
         <Heading

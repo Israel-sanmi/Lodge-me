@@ -6,9 +6,10 @@ import legal from "../assets/legal.png";
 import secure from "../assets/secure.png";
 import happy from "../assets/happy.png";
 import Heading from "../Elements/Heading";
+
 const Activities = () => {
   return (
-    <div className="py-10">
+    <div id="Info" className="py-10">
       <div>
         <Heading
           title="What we do"

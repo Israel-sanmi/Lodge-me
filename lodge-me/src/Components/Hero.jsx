@@ -3,7 +3,7 @@ import globe from "../assets/globe.png";
 import { useEffect } from "react";
 const Hero = ({ handleClose }) => {
   return (
-    <div className="flex flex-wrap items-center justify-around pt-10 md:pt-0">
+    <div id="Home" className="flex flex-wrap items-center justify-around pt-10 md:pt-0">
       <div className="h-40 bg-yellow-200 rounded-full filter blur-3xl absolute md:left-60 left-0 md:-mt-40 -mt-0 w-40"></div>
 
       <div className="relative md:w-1/2 w-full">
