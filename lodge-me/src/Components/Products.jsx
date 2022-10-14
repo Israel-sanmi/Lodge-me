@@ -8,7 +8,6 @@ const Products = ({ handleClose }) => {
   return (
     <div>
       <div>
-        
         <Heading
           title="We want to serve you"
           line={line}
@@ -29,15 +28,23 @@ const Products = ({ handleClose }) => {
                   <br />
                   ipsum dolor sit amet, consectetur adipiscing.
                 </p> */}
-                <button onClick={handleClose} className="bg-[#FBAE39] mt-20 font-bold text-sm md:text-md rounded-2xl py-2 cursor-pointer px-3">
+                <button
+                  onClick={handleClose}
+                  className="bg-[#FBAE39] mt-20 font-bold text-sm md:text-md rounded-2xl py-2 cursor-pointer px-3"
+                >
                   Join our waiting List
                 </button>
               </div>
               <div className="mt-20">
-                <p className="md:text-sm text-xs">Till then, use our human services</p>
-                <button className="bg-none border md:text-md text-sm mt-2 border-[#FBAE39] rounded-2xl py-1 px-9 cursor-pointer">
-                  Contact Us
-                </button>
+                <p className="md:text-sm text-xs">
+                  Till then, use our human services
+                </p>
+
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=2348166366418&text=">
+                  <button className="bg-none border md:text-md text-sm mt-2 border-[#FBAE39] rounded-2xl py-1 px-9 cursor-pointer">
+                    Contact Us
+                  </button>
+                </a>
               </div>
             </div>
           </div>

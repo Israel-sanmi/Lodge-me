@@ -38,7 +38,6 @@ const Complaint = () => {
         <input
           type="text"
           name="user_message"
-          // name="Complaint"
           placeholder="Need Support or have a complaint, type it here"
           className="border-2 md:w-[1000px] w-80 text-xs md:text-sm md:py-3 py-2 text-center border-[#544036] rounded-3xl"
         />

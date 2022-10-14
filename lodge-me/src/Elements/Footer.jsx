@@ -11,14 +11,28 @@ import {
 } from "react-icons/fa";
 const Footer = ({handleClose}) => {
   return (
-    <div id="Contact" className="bg-[#534741] w-full h-[400px] mt-10 p-5 text-xs text-white">
+    <div
+      id="Contact"
+      className="bg-[#534741] w-full h-[400px] mt-10 p-5 text-xs text-white"
+    >
       <div className="grid gap-2 md:grid-cols-4 grid-cols-2 md:mt-20 mt-5 md:mx-28 mx-2 place-items-center">
         <div>
           <img src={logo} alt="" className="w-auto h-20" />
-          <p className="font-light text-xs md:mt-5 mt-2 md:leading-5 leading-snug">
-            Facebook: Cozzy_app <br /> Twitter: Cozzy_app <br /> Instagram:
-            Cozzy_app
-          </p>
+          <div className="font-light text-xs md:mt-5 mt-2 md:leading-5 leading-snug">
+            <p>
+              Facebook{" "}
+              <a href="https://web.facebook.com/profile.php?id=100085385627074">
+                Cozzy_app
+              </a>
+            </p>
+            <p>
+              Twitter <a href="https:/twitter.com/cozzy_app">Cozzy_app</a>
+            </p>
+            <p>
+              Instagram{" "}
+              <a href="https://www.instagram.com/cozzy_app/">Cozzy_app</a>
+            </p>
+          </div>
           <div className="flex mt-2 items-center gap-4">
             <a href="https://web.facebook.com/profile.php?id=100085385627074">
               <FaFacebookF className="md:w-5 h-3 w-3 cursor-pointer md:h-5 " />

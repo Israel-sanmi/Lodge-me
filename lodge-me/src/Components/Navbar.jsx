@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" md:px-24 px-0">
+    <div className=" md:px-12 px-0">
       <div className="md:flex justify-between items-center hidden pt-10">
         <div className="flex gap-2 items-center">
           <a href="/">
